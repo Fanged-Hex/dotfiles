@@ -1,0 +1,26 @@
+export ZSH=$HOME/.oh-my-zsh
+
+ZSH_THEME="spaceship"
+
+DISABLE_AUTO_UPDATE="true"
+
+# Auto Suggestions configuration
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
+plugins=(
+  zsh-completions
+  zsh-autosuggestions
+  {{ .chezmoi.osRelease.id }}
+  dotenv
+  git
+  git-extras
+  git-flow-avh
+  vscode
+  zsh-syntax-highlighting
+)
+autoload -U compinit && compinit
+
+EDITOR='vim'
+
+# Load Oh-My-Zsh
+source $ZSH/oh-my-zsh.sh

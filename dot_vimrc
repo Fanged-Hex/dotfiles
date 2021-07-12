@@ -1,0 +1,10 @@
+filetype on
+syntax on
+set autoindent
+set expandtab
+set shiftwidth=2
+set smartindent
+set smarttab
+set softtabstop=2
+set number
+set mouse=a
